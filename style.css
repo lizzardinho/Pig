@@ -4,31 +4,48 @@ body {
   background-color: black;
 }
 
-.button {
+h1 {
+  font-family: 'VT323', 'arial';
+  color: #eee;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: 'VT323', 'arial';
+  color: #eee;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  font-family: 'VT323', 'arial';
+  background: none;
   border: none;
-  padding: 0;
+  outline: none;
+  display: block;
+  position: absolute;
   top: 50%;
   left: 50%;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  background: hsl(253, 67%, 66%);
-  border-radius: 15px;
-  cursor: pointer;
-  font-family: 'Source Sans Pro', sans-serif;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  padding: 10px;
+  box-shadow: 5px 0px #eee, -5px 0px #eee, 0px 5px #eee, 0px -5px #eee, 0px 15px #eee, -5px 10px #eee, 5px 10px #eee;
+  background: #eee;
+  color: #eee;
+  transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
 }
 
-.top {
-  display: block;
-  padding: 15px 45px;
-  border-radius: 15px;
-  font-size: 2rem;
-  background: hsl(278deg 980% 77%);
-  color: white;
-  transform: translateY(-8px);
-}
-
-.button:active .top {
-  transform: translateY(-2px);
+button:active {
+  box-shadow: 5px 5px #eee, -5px 5px #eee, 0px 10px #eee, 0px 0px #eee, 0px 15px #eee, -5px 10px #eee, 5px 10px #eee;
+  background: #eee;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
 }
 
 #link{
